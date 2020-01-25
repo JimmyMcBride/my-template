@@ -10,6 +10,8 @@ import { AppWrapper } from "bushido-strap";
 import Dashboard from "./views/Dashboard";
 import ReduxCounter from "./views/ReduxCounter";
 
+import "./views/ReduxCounter/styles.scss";
+
 export default function App() {
   return (
     <AppWrapper>

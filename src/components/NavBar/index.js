@@ -1,28 +1,23 @@
 import React from "react";
 
-import { FlexBox, Box } from "bushido-strap";
+import { NavBar, FlexBox, Box } from "bushido-strap";
 import { NavLink } from "react-router-dom";
 
 import theme from "bushido-strap/styled/theme";
 
-export default function NavBar() {
+export default function Nav() {
   return (
-    <FlexBox
-      height="8vh"
-      background={`${theme.gray2}`}
-      width="100%"
-      justify="space-between"
-    >
-      <FlexBox align="center">
-        <Box width="5rem" />
+    <NavBar background={`${theme.gray2}`} justify="space-between" height="10vh">
+      <FlexBox>
         <h2>Company Name</h2>
       </FlexBox>
       <FlexBox>
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/">About</NavLink>
-        <NavLink to="/">Contact</NavLink>
         <Box width="3rem" />
+        <NavLink to="/">About</NavLink>
+        <Box width="3rem" />
+        <NavLink to="/">Contact</NavLink>
       </FlexBox>
-    </FlexBox>
+    </NavBar>
   );
 }

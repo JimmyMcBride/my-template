@@ -17,7 +17,7 @@ export default function Header() {
       <Box color={`${theme.gray1}`}>
         <h1>Header Goes Here</h1>
       </Box>
-      <Box height="2rem" />
+      {/* <Box height="2rem" /> */}
       <Box width="80%" color={`${theme.gray1}`}>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -31,7 +31,7 @@ export default function Header() {
       </Box>
       <FlexBox>
         <Linkton to="/counter">Click here</Linkton>
-        <Box width="2rem" />
+        <Box width="3rem" />
         <Linkton to="/counter" invert>
           No, click here!
         </Linkton>

@@ -11,7 +11,7 @@ export default function Counter() {
 
   const count = useSelector(state => state.counter.count);
   return (
-    <Card width="20rem" dark>
+    <Card invert width="20rem">
       <Box height="2rem" />
       <Button invert onClick={() => dispatch(increment())}>
         ++
@@ -20,8 +20,8 @@ export default function Counter() {
       <FlexBox
         className="count-display"
         align="center"
-        justify="space-between"
-        width="12rem"
+        justify="center"
+        stretch
       >
         Clicked <code>{count}</code> times!!!
       </FlexBox>

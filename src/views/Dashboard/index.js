@@ -2,7 +2,7 @@ import React from "react";
 
 import { Wrapper } from "bushido-strap";
 
-import NavBar from "../../components/NavBar";
+import Nav from "../../components/NavBar";
 import Footer from "../../components/Footer";
 
 import Header from "./components/Header";
@@ -12,7 +12,7 @@ import Content from "./components/Content";
 export default function Dashboard() {
   return (
     <Wrapper justify="space-between">
-      <NavBar />
+      <Nav />
       <Header />
       <Overview />
       <Content />
