@@ -7,8 +7,8 @@ import { Route } from "react-router-dom";
 import { AppWrapper } from "bushido-strap";
 
 // Importing all routes
-import Dashboard from "./_views/Dashboard";
-import ReduxCounter from "./_views/ReduxCounter";
+import Dashboard from "./views/Dashboard";
+import ReduxCounter from "./views/ReduxCounter";
 
 export default function App() {
   return (

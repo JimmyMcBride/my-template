@@ -1,7 +1,9 @@
 import { combineReducers } from "redux";
-import { counter } from "./counter";
+import { counter } from "./count";
+import { info } from "./info";
 
 // Using combine reducers to break up reducers into different files
 export default combineReducers({
-  counter
+  counter,
+  info
 });

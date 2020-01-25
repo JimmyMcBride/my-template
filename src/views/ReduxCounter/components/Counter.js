@@ -2,7 +2,7 @@ import React from "react";
 
 import { FlexBox, Button, Box, Card } from "bushido-strap";
 
-import { increment, decrement } from "../../../store/actions/counter";
+import { increment, decrement } from "../../../store/actions/count";
 
 import { useSelector, useDispatch } from "react-redux";
 
@@ -17,7 +17,12 @@ export default function Counter() {
         ++
       </Button>
       <Box height="2rem" />
-      <FlexBox align="center" justify="space-between" width="12rem">
+      <FlexBox
+        className="count-display"
+        align="center"
+        justify="space-between"
+        width="12rem"
+      >
         Clicked <code>{count}</code> times!!!
       </FlexBox>
       <Box height="2rem" />

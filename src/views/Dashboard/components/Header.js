@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FlexBox, Box, Button } from "bushido-strap";
+import { FlexBox, Box, Linkton } from "bushido-strap";
 
 import theme from "bushido-strap/styled/theme";
 
@@ -9,16 +9,16 @@ export default function Header() {
     <FlexBox
       width="100%"
       height="30vh"
-      background={`${theme.blue3}`}
+      background={`${theme.blue4}`}
       justify="center"
       align="center"
       direction="column"
     >
-      <Box>
+      <Box color={`${theme.gray1}`}>
         <h1>Header Goes Here</h1>
       </Box>
       <Box height="2rem" />
-      <Box width="80%">
+      <Box width="80%" color={`${theme.gray1}`}>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -30,9 +30,11 @@ export default function Header() {
         </p>
       </Box>
       <FlexBox>
-        <Button>Click here</Button>
+        <Linkton to="/counter">Click here</Linkton>
         <Box width="2rem" />
-        <Button invert>No, click here!</Button>
+        <Linkton to="/counter" invert>
+          No, click here!
+        </Linkton>
       </FlexBox>
     </FlexBox>
   );
