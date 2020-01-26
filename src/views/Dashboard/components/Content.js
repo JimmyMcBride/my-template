@@ -10,10 +10,13 @@ export default function Content() {
   const content = useSelector(state => state.info.content);
 
   return (
-    <FlexBox width="100%" height="30vh" wrap="wrap" justify="space-around">
-      {content.map(info => {
-        return <ContentCard title={`${info.title}`} />;
-      })}
+    <FlexBox direction="column">
+      <FlexBox width="100%" height="35vh" wrap="wrap" justify="space-around">
+        {content.map(info => {
+          return <ContentCard title={`${info.title}`} />;
+        })}
+      </FlexBox>
+      {/* <Box height="2rem" /> */}
     </FlexBox>
   );
 }

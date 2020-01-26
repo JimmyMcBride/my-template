@@ -8,11 +8,12 @@ export default function Header() {
   return (
     <FlexBox
       width="100%"
-      height="30vh"
+      height="26vh"
       background={`${theme.blue4}`}
       justify="center"
       align="center"
       direction="column"
+      opacity="0.9"
     >
       <Box color={`${theme.gray1}`}>
         <h1>Header Goes Here</h1>

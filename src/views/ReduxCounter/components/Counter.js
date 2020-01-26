@@ -11,9 +11,9 @@ export default function Counter() {
 
   const count = useSelector(state => state.counter.count);
   return (
-    <Card invert width="20rem">
+    <Card invert width="20rem" opacity="0.9">
       <Box height="2rem" />
-      <Button invert onClick={() => dispatch(increment())}>
+      <Button success onClick={() => dispatch(increment())}>
         ++
       </Button>
       <Box height="2rem" />
@@ -26,7 +26,7 @@ export default function Counter() {
         Clicked <code>{count}</code> times!!!
       </FlexBox>
       <Box height="2rem" />
-      <Button invert onClick={() => dispatch(decrement())}>
+      <Button danger onClick={() => dispatch(decrement())}>
         --
       </Button>
       <Box height="2rem" />

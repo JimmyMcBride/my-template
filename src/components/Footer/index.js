@@ -7,7 +7,12 @@ import theme from "bushido-strap/styled/theme";
 
 export default function Footer() {
   return (
-    <FlexBox height="10vh" background={`${theme.gray2}`} width="100%">
+    <FlexBox
+      opacity="0.5"
+      height="7vh"
+      background={`${theme.gray1}`}
+      width="100%"
+    >
       <Box width="3rem" />
       <FlexBox direction="column" align="center">
         <h5>Company Name</h5>
@@ -15,7 +20,7 @@ export default function Footer() {
       <FlexBox direction="column" align="center">
         <p>101 abstract lane</p>
         <p>City, State / Zip Code</p>
-        <p>info@company.com</p>
+        {/* <p>info@company.com</p> */}
       </FlexBox>
       <Box width="20rem" />
       <FlexBox justify="space-between" width="20rem">

@@ -10,7 +10,7 @@ export default function Overview() {
   const overview = useSelector(state => state.info.overview);
 
   return (
-    <FlexBox width="100%" height="20vh" justify="space-around" align="center">
+    <FlexBox width="100%" height="25vh" justify="space-around" align="center">
       {overview.map(info => {
         return <OverviewCard title={`${info.title}`} />;
       })}

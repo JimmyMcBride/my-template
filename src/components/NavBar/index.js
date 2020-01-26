@@ -7,7 +7,12 @@ import theme from "bushido-strap/styled/theme";
 
 export default function Nav() {
   return (
-    <NavBar background={`${theme.gray2}`} justify="space-between" height="10vh">
+    <NavBar
+      opacity="0.5"
+      background={`${theme.gray1}`}
+      justify="space-between"
+      height="7vh"
+    >
       <FlexBox>
         <h2>Company Name</h2>
       </FlexBox>
